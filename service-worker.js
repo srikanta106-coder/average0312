@@ -1,0 +1,10 @@
+self.addEventListener('install',e=>{
+ e.waitUntil(caches.open('avg0312').then(c=>c.addAll([
+   '/average0312/index.html',
+   '/average0312/manifest.json',
+   '/average0312/icon.png'
+ ])));
+});
+self.addEventListener('fetch',e=>{
+ e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));
+});

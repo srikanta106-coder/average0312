@@ -1,0 +1,16 @@
+{
+  "name": "Average 03-12",
+  "short_name": "Avg03-12",
+  "start_url": "/average0312/index.html",
+  "scope": "/average0312/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0056ff",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
